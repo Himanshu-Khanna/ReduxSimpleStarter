@@ -8,9 +8,13 @@ const API_KEY ='AIzaSyD77w4st73HLdVLPyXyM8OqYmz8xpPNGmw';
 // Creeate a new commponent. This component should produce a HTML
 const App = () => {
     return (
-    <div>
-        <SerachBar />
-    </div>
+      // <Header />
+      <React.StrictMode>
+        <div>
+          <SerachBar />
+        </div>
+      </React.StrictMode>
+      // <Footer />
     ); // JSX is just syntactic sugar for JavaScript
 }
 
