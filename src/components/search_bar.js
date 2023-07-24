@@ -9,7 +9,12 @@ class SerachBar extends Component {
     render() {
         return (
             <div className="w-50 flex">
-                <input onChange={ e => this.setState({term: e.target.value})} />
+                <label className="lable" htmlFor="name">Enter Name:</label>
+                <input id="name" type="text"
+                value={this.state.term}
+                onChange={ e => this.setState({term: e.target.value})} />
+                Value of the input: {this.state.term}
+                <button style={{backgroundColor:'blue',color:'white'}} >submit</button>
             </div>
         );
     }
